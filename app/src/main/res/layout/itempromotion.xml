@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/container_pro">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardElevation="1dp"
+        app:cardMaxElevation="2dp"
+        app:cardCornerRadius="8dp"
+        android:id="@+id/card_click">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView15_likes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="0"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:layout_below="@+id/unfavorite"/>
+
+                <TextView
+                    android:id="@+id/textView15_sup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text=" Likes"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:layout_below="@+id/unfavorite"/>
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/favorite_pr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="filled"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/white"
+                android:layout_marginRight="80dp"
+                android:src="@drawable/ic_favorite_red_24dp" />
+
+            <ImageButton
+                android:id="@+id/unfavorite_pr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="unfilled"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/white"
+                android:layout_marginRight="80dp"
+                android:src="@drawable/ic_favorite_black_24dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/product_image_pr"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:scaleType="fitCenter"
+                android:scaleX=".9"
+                android:scaleY=".9"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/product_name_pr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="nom produit"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:id="@+id/pr_pr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prix sur le marché :"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/prix_pr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="500"
+                        android:textColor="@android:color/holo_red_light"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/monaie_pop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="F CFA"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:id="@+id/p_pr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prix en promotion: "
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/prix_promo_pr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@android:color/holo_green_light"
+                        android:text="500"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/monaie_promo_pr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="F CFA"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:id="@+id/deb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:text="Du  "
+                        android:textStyle="bold"
+                        android:layout_marginBottom="20dp"/>
+
+
+                    <TextView
+                        android:id="@+id/prix_dat_deb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:layout_marginLeft="20dp"
+                        android:text="10/10/2020"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="20dp"/>
+
+                    <TextView
+                        android:id="@+id/au"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:layout_marginLeft="20dp"
+                        android:text="au"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="20dp"/>
+
+                    <TextView
+                        android:id="@+id/prix_dat_fin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@android:color/black"
+                        android:text="30/10/2020"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="20dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

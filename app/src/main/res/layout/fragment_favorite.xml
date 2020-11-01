@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="8dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="430dp">
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/image18" />
+
+
+            <TextView
+                android:id="@+id/textDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:maxLines="5"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:text="Cette page est réservée aux publications des nouveux produits et aux différentes annonces comme des offres de promotion ... Il est nécessaire d'avoir un compte avant de faire une publication ou une annonce. Merci pour votre compréhension!" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnpub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="publier"
+        android:background="@drawable/capsule2"
+        android:textColor="@android:color/white"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">VMarket</string>
+    <string name="search">Search</string>
+    <string name="favorite">Favorite</string>
+    <string name="home">Home</string>
+    <string name="compte">Compte</string>
+    <string name="publication">Publication</string>
+    <string name="categories">categories</string>
+    <string name="notification">Notification</string>
+    <string name="moi">Moi</string>
+    <string name="nom_de_la_boutique">Nom de la boutique</string>
+    <string name="email">Email</string>
+    <string name="suivez_nous">Suivez-nous</string>
+    <string name="evaluer_nous">Evaluer-nous</string>
+    <string name="param_tres">Paramètres</string>
+    <string name="a_propos">A propos</string>
+    <string name="favori">Favori</string>
+    <string name="historique">Historique</string>
+    <string name="param_tre">Paramètre</string>
+    <string name="profil">Profil</string>
+    <string name="aide_et_commentaires">Aide et Commentaires</string>
+    <string name="infos_de_l_application">Infos de l\'application</string>
+    <string name="question_besoin_d_aide">Question? Besoin d\'aide?</string>
+    <string name="vmarket">VMarket</string>
+    <string name="version_1_0_0">Version 1.0.0</string>
+    <string name="_2019_2020_vmarket_inc">2019 - 2020 VMarket Inc</string>
+    <string name="licences">LICENCES</string>
+    <string name="_2020_shoping_pro_team_tous_droits_r_serv_s">2020 Shoping pro Team. Tous droits réservés.</string>
+    <string name="entrer_le_message_faire_passe">Entrer le message à faire passeé</string>
+    <string name="entrer_le_titre_de_votre_annonce">Entrer le titre de votre annonce</string>
+    <string name="annonce">Annonce</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="date_de_publication">Date de publication</string>
+    <string name="editer_par_nom_de_l_entreprise">Editer par : Nom de l\'entreprise</string>
+
+    <string name="mapbox_access_token">MAPBOX_ACCESS_TOKEN</string>
+
+    <string name="google_maps_API_key">AIzaSyBrMYD0yBEzEep7VCdrbc6bZ2jnpouuPQk</string>
+    <string name="accueil">Accueil</string>
+
+
+</resources>

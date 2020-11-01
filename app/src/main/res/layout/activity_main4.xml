@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main4Activity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/t_a4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Produit" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/t_p4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Promotion" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

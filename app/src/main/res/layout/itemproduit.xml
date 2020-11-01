@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/container_pop">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardElevation="1dp"
+        app:cardMaxElevation="2dp"
+        app:cardCornerRadius="8dp"
+        android:id="@+id/card_click">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView14_likes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="0"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:layout_below="@+id/unfavorite"/>
+
+                <TextView
+                    android:id="@+id/textView14_sup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text=" Likes"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:layout_below="@+id/unfavorite"/>
+
+            </LinearLayout>
+
+
+            <ImageButton
+                android:id="@+id/favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="filled"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/white"
+                android:layout_marginRight="80dp"
+                android:src="@drawable/ic_favorite_red_24dp" />
+
+            <ImageButton
+                android:id="@+id/unfavorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="unfilled"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/white"
+                android:layout_marginRight="80dp"
+                android:src="@drawable/ic_favorite_black_24dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/product_image_pop"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:scaleType="fitCenter"
+                android:scaleX=".9"
+                android:scaleY=".9"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/product_name_pop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="nom produit"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp">
+
+
+                    <TextView
+                        android:id="@+id/prix_pop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/holo_red_light"
+                        android:text="500"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="20dp"/>
+
+                    <TextView
+                        android:id="@+id/monaie_pop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="F CFA"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="20dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
